@@ -46,6 +46,7 @@ const Navbar = () => {
 
         <div className={`collapse navbar-collapse ${show ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
+          
             {navigation.map((item) => (
               <li className={`nav-item ${item.subpages ? "dropdown" : ""}`} key={item.title}>
                 {!item.subpages ? (

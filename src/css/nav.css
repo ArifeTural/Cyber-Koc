@@ -8,5 +8,23 @@
     color: rgb(17, 17, 90) !important;
 }
 
+.dropdown ul{
+    width: 250px;
+    background-color: #0d1720;
+    
+ 
+   
+}
+
+
+
+
+ .dropdown-menu .dropdown-item {
+    color: aliceblue; /* Yazı rengi */
+    font-weight: bold; /* Kalın yazı */
+    text-align: center;
+  }
+  
+
 
   
