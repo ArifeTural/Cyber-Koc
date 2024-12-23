@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from "../assets/icon.png"
+import "../css/nav.css"
 
 const Navbar = () => {
   const navigation = [
@@ -26,7 +27,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="navbar navbar-expand-xl navbar-light">
+    <nav className="navbar navbar-expand-xl ">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="analogo" width={100} />
@@ -51,8 +52,8 @@ const Navbar = () => {
                   <NavLink 
                     className={`nav-link ${
                       item.title === "Teklif Al"
-                        ? "teklif-nav btn px-3 py-2 fw-bolder"
-                        : "nav-text text-secondary fw-bolder fs-5 "
+                        ? "teklif-nav btn px-3 py-2 fw-bolder "
+                        : "nav-text text-light fw-bolder fs-5 "
                     } ${
                       location.pathname === item.path 
                         ? "active text-decoration-underline " 
@@ -66,7 +67,7 @@ const Navbar = () => {
                 ) : (
                   <>
                     <button 
-                      className="nav-link dropdown-toggle nav-text text-secondary fw-bolder fs-5" 
+                      className="nav-link dropdown-toggle nav-text text-light fw-bolder fs-5" 
                       id="navbarDropdown" 
                       role="button" 
                       data-bs-toggle="dropdown" 
